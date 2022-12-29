@@ -1,0 +1,41 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+.dark-mode{
+    
+    $body-bg: rgb(41, 41, 41);
+    $card-bg: rgb(78, 78, 78);
+
+    $primary: rgb(0, 183, 255);
+    $secondary: white;
+    $danger: rgb(255, 60, 60);
+    $success: rgb(1, 197, 1);
+    
+    $theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "danger": $danger,
+        "info": $indigo,
+        "dark": $dark,
+        "light": #aaa,
+    );
+
+
+    h6, h1, h2, h4, h5, p {
+        color: white;
+    }
+
+    $dark: white;
+    $light: $body-bg;
+    $modal-content-bg: $card-bg;
+
+    $carousel-indicator-height: 0px;
+  
+
+    @import "bootstrap";
+
+}
+
+
